@@ -1,0 +1,8 @@
+I researched two questions:
+"How has the relationship between the DALYs in China and the UK changed over time? Are they becoming more similar, less similar?"
+"What country or countries have recorded a DALYs less than 18,000 in a single year?"
+
+The code of these two questions are from row31 to row 42
+
+For the first question, I found that only few countries had DALYs less than 18000, which were Iceland, Israel, Japan, Singapore, South Korea, Spain and Switzerland. Among these countries, Japan was the first country whose DALYS was less than 18000 and Switzerland was the latest.
+For the second question, I found that both the DALYs of England and China got lower, and while the DALYs of China was higher than England, the difference was gradually getting smaller as time passed by, from 14000 to almost 0.
