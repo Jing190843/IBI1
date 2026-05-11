@@ -125,14 +125,16 @@ if __name__ == "__main__":
             count[c] = count.get(c, 0) + 1
 
         sorted_items = sorted(count.items(), key=lambda x: x[1], reverse=True)
-        top_codons = [item[0] for item in sorted_items[:64]]
-        top_counts = [item[1] for item in sorted_items[:64]]
+        sorted_items = sorted(count.items(), key=lambda x: x[1], reverse=True)
+        top_codons = [item[0] for item in sorted_items[:15]]  # TOP 15
+        top_counts = [item[1] for item in sorted_items[:15]]
 
+        # Plot clean pie chart
         plt.rcParams['font.sans-serif'] = ['DejaVu Sans']
-        plt.figure(figsize=(70, 70))
+        plt.figure(figsize=(10, 10))  # 合适大小，不超大
         plt.pie(top_counts, labels=top_codons, autopct='%1.1f%%', startangle=90)
-        plt.title(f'Codon Distribution (Stop: {input_stop})')
-        plt.savefig('codon_pie.png', dpi=300, bbox_inches='tight')
+        plt.title(f'Top 15 Codon Distribution (Stop Codon: {input_stop})', fontsize=14)
+        plt.savefig('codon_pie.png', dpi=200, bbox_inches='tight')
         plt.close()
 
         print("Pie chart saved as codon_pie.png")
