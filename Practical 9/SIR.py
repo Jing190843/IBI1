@@ -34,7 +34,7 @@ S = np.array(S)
 I = np.array(I)
 R = np.array(R)
 
-plt.figure(figsize=(6, 4), dpi=300)
+plt.figure(figsize=(6, 4), dpi=150)
 plt.plot(S, label='S')
 plt.plot(I, label='I')
 plt.plot(R, label='R')
@@ -42,7 +42,7 @@ plt.xlabel('Time')
 plt.ylabel('Number of People')
 plt.title('SIR Model Simulation')
 plt.legend()
-plt.savefig("/Users/jing/Desktop/IBI_Practical/Practical 9/SIR_simulation.png", dpi=300)          
+plt.savefig("/Users/jing/Desktop/IBI_Practical/Practical 9/SIR_simulation.png", dpi=150)          
 plt.show()
 
 
