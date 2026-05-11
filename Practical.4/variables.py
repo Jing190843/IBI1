@@ -8,7 +8,7 @@ f=d-e
 
 X= True
 Y= False
-Z= X or Y
+W= X or Y
 #X | Y | W
 #True | False | True
 #True | True | True
