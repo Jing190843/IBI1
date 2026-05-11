@@ -6,6 +6,7 @@ class food_item(object):
         self.protein = protein
         self.carbohydrates = carbohydrates
         self.fat = fat
+        
     #define a function to calculate total calories, protein, carbohydrates, and fat from a list of food items, and print a warning if the total calories or fat exceeds recommended daily limits
     def food_calculate(food_list):
         total_calories = 0
