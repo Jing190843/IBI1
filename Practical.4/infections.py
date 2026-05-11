@@ -1,13 +1,28 @@
-x= 5
-y=0.4
-i=1
-while x <= 91/1.4:
-    i+=1
-    z= x*y
-    x+=z
-    print("there are ",z,"patients in day",i)
-    #tell the number of patients in each day before the very last day when the patients reach 91
-else:
-    print("there are",91-x,"patients in day",i+1)
-    print("the total days are",i+1)
-    #tell the total number of days                              
+# Initial parameters
+x = 5          # Initial number of patients
+y = 0.4        # Daily infection growth rate
+i = 1          # Day counter
+target = 91    # Target total patients
+
+print("===== Daily Number of Infected Patients =====")
+print(f"Day {i}: Initial patients = {x}")
+
+# Loop until reaching the target number of patients
+while x < target:
+    i += 1
+    # New infected patients on current day
+    z = x * y
+    next_total = x + z
+
+    # Adjust for the last day if exceeding target
+    if next_total > target:
+        z = target - x
+
+    # Print daily patient number
+    print(f"Day {i}: There are {z:.2f} new patients")
+    # Update total patients
+    x += z
+
+# Final summary
+print("\n===== Simulation Summary =====")
+print(f"Total days to reach {target} patients: {i} days")
