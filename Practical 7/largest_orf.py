@@ -8,7 +8,7 @@ import re
 # PRINT the longest ORF and its length
 
 seq = 'AAGAUACAUGCAAGUGGUGUGUCUGUUCUGAGAGGGCCUAAAAG'
-orf=re.findall(r'AUG.+?(?:UAA|UAG|UGA)',seq)
-largest_orf=max(orf,key=len)
-largest_orf_lens=len(largest_orf)
+orf = re.findall(r'AUG.+?(?:UAA|UAG|UGA)',seq)
+largest_orf = max(orf,key=len)
+largest_orf_lens = len(largest_orf)
 print(f'largest ORF:{largest_orf}, length: {largest_orf_lens}   ')
