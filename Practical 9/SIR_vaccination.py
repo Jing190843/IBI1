@@ -16,7 +16,7 @@ for v in range(0,10):
     R=[0]
     for i in range(200):
         new_infected=0
-        infect_possibility=I[-1]*0.3/10000
+        infect_possibility = I[-1]*0.3/10000
         infect_true=np.random.choice(range(2), S[-1], p=[1-infect_possibility, infect_possibility])
         new_infected=np.sum(infect_true==1)
 
