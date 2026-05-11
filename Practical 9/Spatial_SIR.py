@@ -37,7 +37,7 @@ for t in range(time_steps+1):
     population = new_pop
     #draw the picture of the population every 10 time steps
     if t % 10 == 0:
-        plt.figure(figsize=(6,4), dpi=150)
+        plt.figure(figsize=(6,4), dpi = 150)
         plt.imshow(population, cmap='viridis', interpolation='nearest')
         plt.title(f'Time step {t}')
         plt.axis('off')
