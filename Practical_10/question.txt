@@ -1,0 +1,7 @@
+I researched two questions:
+"How has the relationship between the DALYs in China and the UK changed over time? Are they becoming more similar, less similar?"
+
+
+The code of the question is from row 56 to row 79
+
+As for the answer, I found that both the DALYs of England and China got lower, and while the DALYs of China was higher than England, the difference was gradually getting smaller as time passed by, from 14000 to almost 0.
